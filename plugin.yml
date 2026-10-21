@@ -1,0 +1,27 @@
+name: CookieShop
+version: 1.0.0
+main: id.cookieshop.CookieShop
+api-version: '1.20'
+description: GUI shop berkategori dengan Vault money dan Shards
+depend: [Vault]
+
+commands:
+  shop:
+    description: Buka shop
+    usage: /<command> [kategori]
+    aliases: [market]
+  shardshop:
+    description: Buka Shard Shop
+    usage: /<command>
+    aliases: [sshop]
+  shards:
+    description: Lihat atau atur shards
+    usage: /<command> [give|take|set] [player] [jumlah]
+
+permissions:
+  cookieshop.use:
+    description: Boleh memakai shop
+    default: true
+  cookieshop.admin:
+    description: Reload shop dan atur shards
+    default: op

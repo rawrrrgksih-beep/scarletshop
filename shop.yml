@@ -1,0 +1,307 @@
+# ============================================================
+#  CookieShop - shop.yml
+#
+#  Tiap kategori:
+#    name       : nama ikon di menu utama
+#    icon       : material ikon di menu utama
+#    menu-slot  : posisi ikon di menu utama (0-53)
+#    title      : judul GUI kategori
+#    currency   : money (Vault) atau shards
+#    rows       : (opsional) jumlah baris, otomatis kalau dikosongkan
+#
+#  Tiap item (nama key = nama material, kecuali pakai "material:"):
+#    buy / sell : harga per bundle. Hapus kalau tidak bisa dibeli / dijual
+#    amount     : isi 1 bundle (default 1)
+#    name/lore  : tampilan custom (opsional)
+#    slot       : posisi manual (opsional, default auto-layout)
+#    commands   : jalankan command console saat dibeli (%player%)
+#
+#  Kontrol di GUI:
+#    Klik kiri = beli | Shift+kiri = beli 1 stack
+#    Klik kanan = jual | Shift+kanan = jual semua
+#
+#  Harga di bawah hanya contoh, silakan sesuaikan.
+# ============================================================
+
+categories:
+
+  blocks:
+    name: "&aBlocks"
+    icon: GRASS_BLOCK
+    menu-slot: 10
+    lore: ["&7Blok bangunan"]
+    title: "&8Shop - Blocks"
+    items:
+      STONE: {buy: 10, sell: 1}
+      COBBLESTONE: {buy: 8, sell: 1}
+      DEEPSLATE: {buy: 12, sell: 1}
+      BLACKSTONE: {buy: 15, sell: 1}
+      STONE_BRICKS: {buy: 12, sell: 1}
+      SMOOTH_STONE: {buy: 12, sell: 1}
+      BRICKS: {buy: 20, sell: 2}
+      QUARTZ_BLOCK: {buy: 30, sell: 3}
+      GLASS: {buy: 10, sell: 1}
+      DIRT: {buy: 2, sell: 0.5}
+      SAND: {buy: 5, sell: 1}
+      GRAVEL: {buy: 5, sell: 1}
+      OAK_LOG: {buy: 10, sell: 2}
+      BIRCH_LOG: {buy: 10, sell: 2}
+      SPRUCE_LOG: {buy: 10, sell: 2}
+      OAK_PLANKS: {buy: 3, sell: 0.5}
+      BOOKSHELF: {buy: 60, sell: 5}
+      TERRACOTTA: {buy: 15, sell: 1}
+      WHITE_CONCRETE: {buy: 15, sell: 1}
+      BLACK_CONCRETE: {buy: 15, sell: 1}
+      RED_CONCRETE: {buy: 15, sell: 1}
+      BLUE_CONCRETE: {buy: 15, sell: 1}
+      PACKED_ICE: {buy: 20, sell: 2}
+      BLUE_ICE: {buy: 60, sell: 5}
+      SEA_LANTERN: {buy: 40, sell: 4}
+      PRISMARINE: {buy: 25, sell: 2}
+      OBSIDIAN: {buy: 120, sell: 10}
+
+  end:
+    name: "&dEnd"
+    icon: END_STONE
+    menu-slot: 11
+    lore: ["&7Item dari The End"]
+    title: "&8Shop - End"
+    items:
+      ENDER_CHEST: {buy: 800, sell: 50}
+      ENDER_PEARL: {buy: 150, sell: 20}
+      END_STONE: {buy: 100, sell: 5, amount: 16}
+      DRAGON_BREATH: {buy: 400, sell: 30}
+      END_ROD: {buy: 60, sell: 5}
+      SHULKER_SHELL: {buy: 900, sell: 100}
+      SHULKER_BOX: {buy: 2500, sell: 200}
+      CHORUS_FRUIT: {buy: 30, sell: 3}
+      CHORUS_FLOWER: {buy: 80, sell: 8}
+      PURPUR_BLOCK: {buy: 25, sell: 2}
+
+  nether:
+    name: "&cNether"
+    icon: NETHERRACK
+    menu-slot: 12
+    lore: ["&7Item dari Nether"]
+    title: "&8Shop - Nether"
+    items:
+      BLAZE_ROD: {buy: 120, sell: 15}
+      NETHER_WART: {buy: 25, sell: 3}
+      SOUL_SAND: {buy: 15, sell: 2}
+      MAGMA_CREAM: {buy: 80, sell: 8}
+      GHAST_TEAR: {buy: 400, sell: 40}
+      NETHERRACK: {buy: 3, sell: 0.5}
+      NETHER_BRICKS: {buy: 12, sell: 1}
+      MAGMA_BLOCK: {buy: 20, sell: 2}
+      CRYING_OBSIDIAN: {buy: 250, sell: 20}
+      QUARTZ: {buy: 15, sell: 2}
+      GLOWSTONE_DUST: {buy: 15, sell: 2}
+
+  food:
+    name: "&6Food"
+    icon: COOKED_BEEF
+    menu-slot: 13
+    lore: ["&7Makanan"]
+    title: "&8Shop - Food"
+    items:
+      BREAD: {buy: 15, sell: 2}
+      BAKED_POTATO: {buy: 12, sell: 2}
+      SWEET_BERRIES: {buy: 8, sell: 1}
+      MELON_SLICE: {buy: 6, sell: 1}
+      CARROT: {buy: 8, sell: 1}
+      APPLE: {buy: 10, sell: 1}
+      COOKED_CHICKEN: {buy: 20, sell: 3}
+      COOKED_PORKCHOP: {buy: 25, sell: 3}
+      COOKED_BEEF: {buy: 25, sell: 3}
+      COOKED_SALMON: {buy: 20, sell: 3}
+      GOLDEN_CARROT: {buy: 60, sell: 6}
+      GOLDEN_APPLE: {buy: 400, sell: 40}
+
+  farm:
+    name: "&2Farm"
+    icon: WHEAT
+    menu-slot: 14
+    lore: ["&7Hasil tani"]
+    title: "&8Shop - Farm"
+    items:
+      WHEAT_SEEDS: {buy: 5, sell: 0.5}
+      WHEAT: {buy: 8, sell: 1}
+      CARROT: {buy: 8, sell: 1}
+      POTATO: {buy: 8, sell: 1}
+      BEETROOT_SEEDS: {buy: 5, sell: 0.5}
+      BEETROOT: {buy: 8, sell: 1}
+      MELON_SEEDS: {buy: 6, sell: 0.5}
+      PUMPKIN_SEEDS: {buy: 6, sell: 0.5}
+      SUGAR_CANE: {buy: 6, sell: 1}
+      CACTUS: {buy: 6, sell: 1}
+      BAMBOO: {buy: 4, sell: 0.5}
+      SWEET_BERRIES: {buy: 8, sell: 1}
+      COCOA_BEANS: {buy: 8, sell: 1}
+      NETHER_WART: {buy: 25, sell: 3}
+      PUMPKIN: {buy: 15, sell: 2}
+      MELON: {buy: 15, sell: 2}
+      KELP: {buy: 5, sell: 0.5}
+      BONE_MEAL: {buy: 10, sell: 1}
+      HAY_BLOCK: {buy: 60, sell: 8}
+
+  redstone:
+    name: "&4Redstone"
+    icon: REDSTONE
+    menu-slot: 15
+    lore: ["&7Komponen redstone"]
+    title: "&8Shop - Redstone"
+    items:
+      REDSTONE: {buy: 15, sell: 2}
+      REDSTONE_TORCH: {buy: 20, sell: 2}
+      REDSTONE_BLOCK: {buy: 120, sell: 15}
+      REPEATER: {buy: 40, sell: 4}
+      COMPARATOR: {buy: 80, sell: 8}
+      OBSERVER: {buy: 70, sell: 7}
+      PISTON: {buy: 60, sell: 6}
+      STICKY_PISTON: {buy: 90, sell: 9}
+      DROPPER: {buy: 40, sell: 4}
+      DISPENSER: {buy: 50, sell: 5}
+      HOPPER: {buy: 100, sell: 10}
+      LEVER: {buy: 10, sell: 1}
+      STONE_BUTTON: {buy: 8, sell: 1}
+      STONE_PRESSURE_PLATE: {buy: 10, sell: 1}
+      TRIPWIRE_HOOK: {buy: 20, sell: 2}
+      NOTE_BLOCK: {buy: 25, sell: 3}
+      DAYLIGHT_DETECTOR: {buy: 70, sell: 7}
+      TARGET: {buy: 40, sell: 4}
+      SLIME_BLOCK: {buy: 150, sell: 15}
+      HONEY_BLOCK: {buy: 150, sell: 15}
+      RAIL: {buy: 8, sell: 1}
+      POWERED_RAIL: {buy: 25, sell: 3}
+      DETECTOR_RAIL: {buy: 20, sell: 2}
+      ACTIVATOR_RAIL: {buy: 20, sell: 2}
+      TNT: {buy: 60, sell: 6}
+      LIGHTNING_ROD: {buy: 30, sell: 3}
+      ITEM_FRAME: {buy: 20, sell: 2}
+
+  dye:
+    name: "&eDye"
+    icon: RED_DYE
+    menu-slot: 20
+    lore: ["&7Pewarna"]
+    title: "&8Shop - Dye"
+    items:
+      WHITE_DYE: {buy: 10, sell: 1}
+      LIGHT_GRAY_DYE: {buy: 10, sell: 1}
+      GRAY_DYE: {buy: 10, sell: 1}
+      BLACK_DYE: {buy: 10, sell: 1}
+      BROWN_DYE: {buy: 10, sell: 1}
+      RED_DYE: {buy: 10, sell: 1}
+      ORANGE_DYE: {buy: 10, sell: 1}
+      YELLOW_DYE: {buy: 10, sell: 1}
+      LIME_DYE: {buy: 10, sell: 1}
+      GREEN_DYE: {buy: 10, sell: 1}
+      CYAN_DYE: {buy: 10, sell: 1}
+      LIGHT_BLUE_DYE: {buy: 10, sell: 1}
+      BLUE_DYE: {buy: 10, sell: 1}
+      PURPLE_DYE: {buy: 10, sell: 1}
+      MAGENTA_DYE: {buy: 10, sell: 1}
+      PINK_DYE: {buy: 10, sell: 1}
+
+  gear:
+    name: "&bGear"
+    icon: TOTEM_OF_UNDYING
+    menu-slot: 22
+    lore: ["&7Senjata, armor, dan peralatan PvP"]
+    title: "&8Shop - Gear"
+    items:
+      DIAMOND_SWORD: {buy: 1500}
+      DIAMOND_HELMET: {buy: 2500}
+      DIAMOND_CHESTPLATE: {buy: 4000}
+      DIAMOND_LEGGINGS: {buy: 3500}
+      DIAMOND_BOOTS: {buy: 2000}
+      DIAMOND_PICKAXE: {buy: 1500}
+      DIAMOND_AXE: {buy: 1500}
+      DIAMOND_SHOVEL: {buy: 800}
+      SHIELD: {buy: 300}
+      BOW: {buy: 200}
+      CROSSBOW: {buy: 300}
+      ARROW: {buy: 5, sell: 0.5}
+      OBSIDIAN: {buy: 120, sell: 10}
+      CRYING_OBSIDIAN: {buy: 250, sell: 20}
+      END_CRYSTAL: {buy: 500}
+      RESPAWN_ANCHOR: {buy: 700}
+      GLOWSTONE: {buy: 60, sell: 6}
+      TOTEM_OF_UNDYING: {buy: 2500}
+      ENDER_PEARL: {buy: 150, sell: 20}
+      ENDER_EYE: {buy: 200, sell: 20}
+      GOLDEN_APPLE: {buy: 400, sell: 40}
+      EXPERIENCE_BOTTLE: {buy: 50, sell: 5}
+      COBWEB: {buy: 80, sell: 8}
+      TNT_MINECART: {buy: 150}
+      MINECART: {buy: 40, sell: 4}
+      FIREWORK_ROCKET: {buy: 30, sell: 3}
+      SNOWBALL: {buy: 3, sell: 0.5}
+      OAK_DOOR: {buy: 15, sell: 1}
+
+  trims:
+    name: "&3Trims"
+    icon: SENTRY_ARMOR_TRIM_SMITHING_TEMPLATE
+    menu-slot: 16
+    lore: ["&7Armor trim & smithing template"]
+    title: "&8Shop - Trims"
+    items:
+      NETHERITE_UPGRADE_SMITHING_TEMPLATE: {buy: 5000}
+      SENTRY_ARMOR_TRIM_SMITHING_TEMPLATE: {buy: 2000}
+      DUNE_ARMOR_TRIM_SMITHING_TEMPLATE: {buy: 2000}
+      COAST_ARMOR_TRIM_SMITHING_TEMPLATE: {buy: 2000}
+      WILD_ARMOR_TRIM_SMITHING_TEMPLATE: {buy: 2000}
+      WARD_ARMOR_TRIM_SMITHING_TEMPLATE: {buy: 2500}
+      EYE_ARMOR_TRIM_SMITHING_TEMPLATE: {buy: 2500}
+      VEX_ARMOR_TRIM_SMITHING_TEMPLATE: {buy: 2500}
+      TIDE_ARMOR_TRIM_SMITHING_TEMPLATE: {buy: 2000}
+      SNOUT_ARMOR_TRIM_SMITHING_TEMPLATE: {buy: 2000}
+      RIB_ARMOR_TRIM_SMITHING_TEMPLATE: {buy: 2000}
+      SPIRE_ARMOR_TRIM_SMITHING_TEMPLATE: {buy: 2500}
+      SILENCE_ARMOR_TRIM_SMITHING_TEMPLATE: {buy: 3000}
+      WAYFINDER_ARMOR_TRIM_SMITHING_TEMPLATE: {buy: 2000}
+      RAISER_ARMOR_TRIM_SMITHING_TEMPLATE: {buy: 2000}
+      SHAPER_ARMOR_TRIM_SMITHING_TEMPLATE: {buy: 2000}
+      HOST_ARMOR_TRIM_SMITHING_TEMPLATE: {buy: 2000}
+
+  # Shard Shop: dibeli pakai Shards, item diberikan lewat command console.
+  # Ganti command-nya sesuai plugin crate kamu (contoh di bawah hanya placeholder).
+  shards:
+    name: "&5Shard Shop"
+    icon: AMETHYST_SHARD
+    menu-slot: 31
+    lore: ["&7Tukar Shards dengan hadiah spesial"]
+    title: "&8Shard Shop"
+    currency: shards
+    rows: 3
+    items:
+      common_key:
+        material: TRIPWIRE_HOOK
+        name: "&aCommon Key"
+        lore: ["&7Kunci crate Common"]
+        buy: 5
+        commands: ["crate give %player% common 1"]
+      rare_key:
+        material: TRIPWIRE_HOOK
+        name: "&9Rare Key"
+        lore: ["&7Kunci crate Rare"]
+        buy: 15
+        commands: ["crate give %player% rare 1"]
+      epic_key:
+        material: TRIPWIRE_HOOK
+        name: "&5Epic Key"
+        lore: ["&7Kunci crate Epic"]
+        buy: 40
+        commands: ["crate give %player% epic 1"]
+      legendary_key:
+        material: TRIPWIRE_HOOK
+        name: "&6Legendary Key"
+        lore: ["&7Kunci crate Legendary"]
+        buy: 100
+        commands: ["crate give %player% legendary 1"]
+      money_voucher:
+        material: PAPER
+        name: "&aVoucher $10K"
+        lore: ["&7Dapatkan uang $10.000"]
+        buy: 20
+        commands: ["eco give %player% 10000"]

@@ -1,0 +1,48 @@
+# ============================================================
+#  CookieShop - config.yml
+#  Item & kategori shop diatur di shop.yml  (/shop reload untuk memuat ulang)
+# ============================================================
+
+prefix: "&6&lSHOP &8▷ "
+
+main-menu:
+  title: "&8Shop"
+  rows: 6
+
+back-button:
+  material: RED_STAINED_GLASS_PANE
+  name: "&cBack"
+
+# Format harga. %s = angka (otomatis jadi K / M / B)
+currency:
+  money: "$%s"
+  shards: "%s Shards"
+
+# Baris lore yang ditambahkan ke item di GUI
+lore:
+  open: "&eKlik untuk membuka"
+  buy: "&7Klik kiri: &aBeli x%amount% &8(&a%price%&8)"
+  buy-stack: "&7Shift + klik kiri: &aBeli x%amount% &8(&a%price%&8)"
+  sell: "&7Klik kanan: &cJual x%amount% &8(&c%price%&8)"
+  sell-all: "&7Shift + klik kanan: &cJual semua"
+  buy-command: "&7Klik kiri: &aBeli &8(&a%price%&8)"
+
+messages:
+  shop-not-found: "&cShop not found."
+  no-permission: "&cKamu tidak punya izin."
+  only-players: "&cHanya pemain yang bisa memakai command ini."
+  reloaded: "&aShop berhasil di-reload."
+  economy-missing: "&cEconomy belum tersedia, hubungi admin."
+  not-for-sale: "&cItem ini tidak bisa dibeli."
+  not-sellable: "&cItem ini tidak bisa dijual."
+  not-enough: "&cUang tidak cukup. Butuh &f%price%&c, kamu punya &f%balance%&c."
+  no-space: "&cInventory kamu penuh."
+  not-enough-items: "&cKamu tidak punya cukup &f%item%&c."
+  bought: "&aBerhasil membeli &f%amount%x %item% &auntuk &f%price%&a."
+  sold: "&aBerhasil menjual &f%amount%x %item% &auntuk &f%price%&a."
+  shards-balance: "&7Shards kamu: &d%amount%"
+  shards-other: "&7Shards &f%player%&7: &d%amount%"
+  shards-updated: "&aShards &f%player% &asekarang: &d%amount%"
+  shards-usage: "&cPakai: /shards <give|take|set> <player> <jumlah>"
+  player-not-found: "&cPemain &f%player% &ctidak ditemukan."
+  invalid-amount: "&cJumlah tidak valid."
